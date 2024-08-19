@@ -1,0 +1,45 @@
+.background-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  color: white;
+
+  .city {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .weather-icon {
+    font-size: 64px;
+    margin-bottom: 10px;
+    color: goldenrod;
+  }
+
+  .temperature {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .description {
+    font-size: 18px;
+    color: white;
+  }
+
+  .additional-info {
+    margin-top: 10px;
+  }
+}

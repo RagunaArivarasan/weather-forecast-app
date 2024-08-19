@@ -1,0 +1,56 @@
+<div class="background-image" [style.backgroundImage]="'url(\'assets/images/clear.webp\')'">
+  <div class="container">
+    <h5 class="py-3 fw-bold">Daily Forecast</h5>
+    <div class="table-container">
+      <table class="table table-responsive table-striped">
+        <thead>
+          <tr>
+            <th scope="col" class="text-center">Date</th>
+            <th scope="col" class="text-center">Minimum Temperature</th>
+            <th scope="col" class="text-center">Maximum Temperature</th>
+            <th scope="col" class="text-center">Average Temperature</th>
+            <th scope="col" class="text-center">Wind</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (day of dailyAverages; track day; let i = $index) {
+          <tr class="cursor-pointer" (click)="expandedRows[i] = !expandedRows[i]">
+            <th scope="row" class="text-center">{{ day.date | date:'dd-MM-yyyy' }}</th>
+            <td class="text-center">{{ day.minTemp }}°C</td>
+            <td class="text-center">{{ day.maxTemp }}°C</td>
+            <td class="text-center">{{ day.avgTemp }}°C</td>
+            <td class="text-center">{{ day.avgWindSpeed }} m/s</td>
+          </tr>
+          @if (expandedRows[i]) {
+          <tr>
+            <td colspan="7" class="row-details">
+              <div class="row">
+                <div class="col-md-4 mb-1 text-center">
+                  <fa-icon class="weather-icon icon-font-size" [icon]="getWeatherIcon(day.icon)"></fa-icon>
+                  <div class="weather-des">{{
+                    day.description
+                    }}</div>
+                </div>
+                <div class="col-md-4 temperature my-auto text-center">
+                  {{ day.avgTemp }}°C
+                  <div class="font-size-13 my-2">
+                    <span><fa-icon [icon]="faArrowUp"></fa-icon>
+                      {{ day.maxTemp }}°C</span>
+                    <span class="ms-4"><fa-icon [icon]="faArrowDown"></fa-icon>
+                      {{ day.minTemp }}°C</span>
+                  </div>
+                </div>
+                <div class="col-md-4 my-auto text-center">
+                  <p class="mb-0 fw-medium">Humidity: {{ day.avgHumidity }}%</p>
+                  <p class="mb-0 fw-medium">Wind: {{ day.avgWindSpeed }} m/s</p>
+                  <p class="mb-0 fw-medium">Feels Like: {{ day.feelsLike }}°C</p>
+                </div>
+              </div>
+            </td>
+          </tr>
+          } }
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

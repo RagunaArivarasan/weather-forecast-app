@@ -24,10 +24,7 @@ This Angular application displays the current day's weather and a four-day forec
 To run this project locally, follow these steps:
 	1.	Clone the repository: git clone https://github.com/RagunaArivarasan/weather-forecast-app.git
 	2.	Navigate to the project directory: cd weather-forecast-app
-	3.	Install dependencies: npm install 
-	     Note: In case if the build is failed please try to use the below command.
-		 1. Remove the package-lock.json file
-		 2. npm install --force
+	3.	Install dependencies: npm install
 	4.	Run the application: ng serve
 	5.	Open the application in your browser: Go to http://localhost:4200.
     6.  Navigate to http://localhost:4200 to view the current day's weather data.

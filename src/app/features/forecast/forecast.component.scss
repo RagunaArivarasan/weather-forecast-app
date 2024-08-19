@@ -1,0 +1,39 @@
+.background-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+.table-container {
+  border-radius: 10px;
+}
+
+.weather-icon {
+  color: goldenrod;
+}
+
+.row-details {
+  color: #6d9cca;
+}
+
+.weather-des {
+  font-weight: 500;
+  margin-left: 1rem;
+  text-transform: capitalize;
+}
+
+.font-size-13 {
+  font-size: 13px;
+}
+
+.temperature {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.icon-font-size {
+  font-size: 30px;
+}
