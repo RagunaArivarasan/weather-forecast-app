@@ -7,9 +7,10 @@ This Angular application displays the current day's weather and a four-day forec
 	•	Setup
 	•	Usage
 	•	API Integration
+ 	•	Environment
 
 ## Features
-    •	Current Weather: Displays current weather conditions including temperature, humidity, and wind speed.
+    	•	Current Weather: Displays current weather conditions including temperature, humidity, and wind speed.
 	•	4-Day Weather Forecast: Displays a 4-day weather forecast with details such as temperature, humidity, and wind speed.
 	•	Session-based Caching: Weather data is stored in sessionStorage and is only refreshed once per day.
 	•	SCSS Styling: The app uses SCSS for modular and maintainable styling.
@@ -38,3 +39,9 @@ To run this project locally, follow these steps:
 
 ## API Integration
 The application integrates with the OpenWeatherMap API to fetch weather data.
+
+## Environment
+	•	Angular: 17.3.8
+	•	Node: 18.13.0
+	•	NPM: 8.19.3
+This project requires a Node.js environment and the Angular CLI to run.
