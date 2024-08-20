@@ -10,7 +10,7 @@ This Angular application displays the current day's weather and a four-day forec
  	•	Environment
 
 ## Features
-    	•	Current Weather: Displays current weather conditions including temperature, humidity, and wind speed.
+•	Current Weather: Displays current weather conditions including temperature, humidity, and wind speed.
 	•	4-Day Weather Forecast: Displays a 4-day weather forecast with details such as temperature, humidity, and wind speed.
 	•	Session-based Caching: Weather data is stored in sessionStorage and is only refreshed once per day.
 	•	SCSS Styling: The app uses SCSS for modular and maintainable styling.
@@ -23,13 +23,13 @@ This Angular application displays the current day's weather and a four-day forec
 
 ## Setup
 To run this project locally, follow these steps:
-	1.	Clone the repository: git clone https://github.com/RagunaArivarasan/weather-forecast-app.git
-	2.	Navigate to the project directory: cd weather-forecast-app
-	3.	Install dependencies: npm install
-	4.	Run the application: ng serve
-	5.	Open the application in your browser: Go to http://localhost:4200.
-    6.  Navigate to http://localhost:4200 to view the current day's weather data.
-    7.  Navigate to http://localhost:4200/four-days-forecast to view the upcoming 4-day weather forecast.
+	•	Clone the repository: git clone https://github.com/RagunaArivarasan/weather-forecast-app.git
+	•	Navigate to the project directory: cd weather-forecast-app
+	•	Install dependencies: npm install
+	•	Run the application: ng serve
+	•	Open the application in your browser: Go to http://localhost:4200.
+    	• 	Navigate to http://localhost:4200 to view the current day's weather data.
+    	•  	Navigate to http://localhost:4200/four-days-forecast to view the upcoming 4-day weather forecast.
 
 ## Usage
 	•	Visit the "/" route to view the current weather data.
